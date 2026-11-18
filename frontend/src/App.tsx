@@ -1,3 +1,4 @@
+import { ReportProfile, ReportView } from "./Report";
 import { portraits } from "./portraits";
 import { useEffect, useState } from "react";
 import {
@@ -175,7 +176,7 @@ function Profile({ r, role }: { r: Row; role: Role }) {
         </h1>
       </header>
       <section>
-        <h2>Why this player was selected</h2>
+        <h2>Exploratory format ranking</h2>
         <p>
           {position
             ? "This player qualifies for metric review and ranks #" +
@@ -212,6 +213,7 @@ function Profile({ r, role }: { r: Row; role: Role }) {
             "/?" +
             new URLSearchParams({
               section: pages[4],
+              view: "explore",
               format: r.match_format,
               role,
             })
@@ -350,16 +352,21 @@ function App() {
         ))}
       </nav>
       <main>
-        {profile ? (
+        {profile && query.get("view") === "report" ? (
+          <ReportProfile role={role} playerId={playerId!} />
+        ) : profile ? (
           player ? (
             <Profile r={player} role={role} />
           ) : (
             <h1>Player record unavailable</h1>
           )
+        ) : (page === pages[0] || leaderboard) &&
+          query.get("view") !== "explore" ? (
+          <ReportView overview={page === pages[0]} role={role} />
         ) : (
           <>
             <header className="title">
-              <label>Stage 4 / Performance analysis</label>
+              <label>Exploratory analytics / Single format</label>
               <h1>{page === pages[0] ? "Overview" : page}</h1>
               {page === pages[0] && (
                 <p>

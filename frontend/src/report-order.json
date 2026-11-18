@@ -1,0 +1,106 @@
+{
+  "batting": [
+    {
+      "name": "Dinesh Karthik",
+      "evidence": "High",
+      "ids": ["143"]
+    },
+    {
+      "name": "Ravindra Jadeja",
+      "evidence": "High",
+      "ids": ["152"]
+    },
+    {
+      "name": "Mahendra Singh Dhoni",
+      "evidence": "High",
+      "ids": ["8"]
+    },
+    {
+      "name": "Rashid Khan",
+      "evidence": "High",
+      "ids": ["4722"]
+    },
+    {
+      "name": "Abdul Samad",
+      "evidence": "High",
+      "ids": ["6922", "7446"]
+    },
+    {
+      "name": "Virat Kohli",
+      "evidence": "Moderate",
+      "ids": ["47"]
+    },
+    {
+      "name": "Shikhar Dhawan",
+      "evidence": "Limited",
+      "ids": ["142"]
+    },
+    {
+      "name": "Rohit Sharma",
+      "evidence": "Limited",
+      "ids": ["126"]
+    },
+    {
+      "name": "Basil Hameed",
+      "evidence": "Limited",
+      "ids": ["8638"]
+    },
+    {
+      "name": "Faf du Plessis",
+      "evidence": "Limited",
+      "ids": ["88"]
+    }
+  ],
+  "bowling": [
+    {
+      "name": "Rashid Khan",
+      "evidence": "High",
+      "ids": ["4722"]
+    },
+    {
+      "name": "Ravindra Jadeja",
+      "evidence": "High",
+      "ids": ["152"]
+    },
+    {
+      "name": "Dwayne Bravo",
+      "evidence": "Moderate",
+      "ids": ["161"]
+    },
+    {
+      "name": "Ishant Sharma",
+      "evidence": "Moderate",
+      "ids": ["28"]
+    },
+    {
+      "name": "Piyush Chawla",
+      "evidence": "Moderate",
+      "ids": ["23"]
+    },
+    {
+      "name": "Haider Ali",
+      "evidence": "Limited",
+      "ids": ["28756"]
+    },
+    {
+      "name": "Amit Mishra",
+      "evidence": "Limited",
+      "ids": ["158"]
+    },
+    {
+      "name": "Basil Hameed",
+      "evidence": "Limited",
+      "ids": ["8638"]
+    },
+    {
+      "name": "Virat Kohli",
+      "evidence": "Very low",
+      "ids": ["47"]
+    },
+    {
+      "name": "Bashir Ahmad",
+      "evidence": "Very low",
+      "ids": ["29833"]
+    }
+  ]
+}
